@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import SwiftUI
 
-final class HomeViewController: UIViewController, NavigationView {
+final class HomeViewController: UIViewController{
     
     // MARK: - Properties
     var presenter: ViewToPresenterHomeProtocol!
 
+    
+    
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = HomeView(self)
-        view.backgroundColor = .white
+        print("hamit")
+        
     }
      
 }

@@ -20,20 +20,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		03BC244E2D0DBC5600EFAFB6 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */ = {
+		034B2CED2D0DF90100C00134 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Application/Info.plist,
 			);
 			target = 03BC243B2D0DBC5400EFAFB6 /* PopCastApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		03BC243E2D0DBC5400EFAFB6 /* PopCastApp */ = {
+		034B2CE02D0DF90100C00134 /* PopCastApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				03BC244E2D0DBC5600EFAFB6 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */,
+				034B2CED2D0DF90100C00134 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */,
 			);
 			path = PopCastApp;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		03BC24332D0DBC5400EFAFB6 = {
 			isa = PBXGroup;
 			children = (
-				03BC243E2D0DBC5400EFAFB6 /* PopCastApp */,
+				034B2CE02D0DF90100C00134 /* PopCastApp */,
 				03BC243D2D0DBC5400EFAFB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				03BC243E2D0DBC5400EFAFB6 /* PopCastApp */,
+				034B2CE02D0DF90100C00134 /* PopCastApp */,
 			);
 			name = PopCastApp;
 			packageProductDependencies = (
@@ -199,7 +199,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Info.plist;
+				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -227,7 +227,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Info.plist;
+				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

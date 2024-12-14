@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 final class HomeView: BaseView<HomeViewController> {
     override func setupView() {
@@ -18,7 +19,7 @@ final class HomeView: BaseView<HomeViewController> {
     /// sample method to setup layout
     private lazy var podcastTitleLabel: UILabel = {
         let label = UILabel()
-        label.font = Theme.defaultTheme.themeFont.subtitleFontBoldSize
+      //  label.font = Theme.defaultTheme.themeFont.subtitleFontBoldSize
         return label
     }()
 

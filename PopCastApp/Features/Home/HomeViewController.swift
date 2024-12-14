@@ -7,24 +7,26 @@
 //
 
 import UIKit
-import SwiftUI
 
-final class HomeViewController: UIViewController{
+final class HomeViewController: UIViewController, NavigationView {
     
     // MARK: - Properties
     var presenter: ViewToPresenterHomeProtocol!
 
-    
-    
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hamit")
-        
+        self.view = HomeView(self)
+        view.backgroundColor = .white
     }
      
 }
 
 extension HomeViewController: PresenterToViewHomeProtocol{
+    func showMessaeg(message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.show(self,sender: nil)
+    }
+    
     // TODO: Implement View Output Methods
 }

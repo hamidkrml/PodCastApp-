@@ -9,6 +9,10 @@
 import Foundation
 
 final class HomeInteractor: PresenterToInteractorHomeProtocol {
+    func saveLikeIndexToDatabase(index: Int) {
+        <#code#>
+    }
+    
 
     // MARK: Properties
     var presenter: InteractorToPresenterHomeProtocol?

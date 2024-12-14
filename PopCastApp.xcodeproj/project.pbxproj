@@ -10,6 +10,8 @@
 		034B2C682D0DE47200C00134 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C672D0DE47200C00134 /* Realm */; };
 		034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C6C2D0DE51B00C00134 /* Toast */; };
 		034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C732D0DF0FF00C00134 /* BottomSheet */; };
+		034B2D062D0E019F00C00134 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2D052D0E019F00C00134 /* SnapKit */; };
+		034B2D082D0E019F00C00134 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2D072D0E019F00C00134 /* SnapKit-Dynamic */; };
 		03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC24552D0DC07700EFAFB6 /* Alamofire */; };
 		03BC245B2D0DC0F500EFAFB6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC245A2D0DC0F500EFAFB6 /* Swinject */; };
 		03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC245F2D0DC1EB00EFAFB6 /* Kingfisher */; };
@@ -48,6 +50,8 @@
 				03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */,
 				034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */,
 				03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */,
+				034B2D082D0E019F00C00134 /* SnapKit-Dynamic in Frameworks */,
+				034B2D062D0E019F00C00134 /* SnapKit in Frameworks */,
 				03BC245B2D0DC0F500EFAFB6 /* Swinject in Frameworks */,
 				034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */,
 				034B2C682D0DE47200C00134 /* Realm in Frameworks */,
@@ -100,6 +104,8 @@
 				034B2C672D0DE47200C00134 /* Realm */,
 				034B2C6C2D0DE51B00C00134 /* Toast */,
 				034B2C732D0DF0FF00C00134 /* BottomSheet */,
+				034B2D052D0E019F00C00134 /* SnapKit */,
+				034B2D072D0E019F00C00134 /* SnapKit-Dynamic */,
 			);
 			productName = PopCastApp;
 			productReference = 03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */;
@@ -137,6 +143,7 @@
 				034B2C6B2D0DE51B00C00134 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03BC243D2D0DBC5400EFAFB6 /* Products */;
@@ -421,6 +428,14 @@
 				minimumVersion = 2.0.5;
 			};
 		};
+		034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		03BC24542D0DC07700EFAFB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -462,6 +477,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
+		};
+		034B2D052D0E019F00C00134 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		034B2D072D0E019F00C00134 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 		03BC24552D0DC07700EFAFB6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

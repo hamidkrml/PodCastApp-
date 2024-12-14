@@ -9,6 +9,8 @@
 import Foundation
 
 final class HomePresenter: ViewToPresenterHomeProtocol {
+    
+    
 
     // MARK: Properties
     private let view: PresenterToViewHomeProtocol
@@ -21,8 +23,15 @@ final class HomePresenter: ViewToPresenterHomeProtocol {
         self.router = router
         self.view = view
     }
+    func onLikePressed(index: Int) {
+            
+    }
 }
 
 extension HomePresenter: InteractorToPresenterHomeProtocol {
+    func showSucsessMesaage() {
+        view.showMessaeg(message: "okey Basirili")
+    }
+    
     
 }

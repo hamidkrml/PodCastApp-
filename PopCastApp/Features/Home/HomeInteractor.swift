@@ -10,7 +10,7 @@ import Foundation
 
 final class HomeInteractor: PresenterToInteractorHomeProtocol {
     func saveLikeIndexToDatabase(index: Int) {
-        <#code#>
+        
     }
     
 

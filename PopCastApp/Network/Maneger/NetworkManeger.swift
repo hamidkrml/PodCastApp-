@@ -10,9 +10,12 @@ import Foundation
 
 final class NetworkManeger{
     private let config : NetworkConfig
+    private let decoder : JSONDecoder
     
-    init(config: NetworkConfig) {
+    init(config: NetworkConfig, decoder: JSONDecoder = JSONDecoder()){
         self.config = config
+        self.decoder = decoder
+        self.decoder.dateDecodingStrategy = .iso8601
     }
    
 
@@ -24,17 +27,26 @@ final class NetworkManeger{
         body: Encodable? = nil,
         paramater: Parameters? = nil
         
-    ) -> Result<T?,Error>{
+    ) async -> Result<T,Error>{
         let url = config.baseUrl + path.value
         
         let reqeust: DataRequest
         
-        if let body = body {
-            reqeust = Af.request(url.)
+        if let body = body{
+            reqeust = AF.request(url, method: method.aloamofireMethod, parameters: body, encoder: JSONParameterEncoder.default)
+        }else{
+            reqeust = AF.request(url, method: method.aloamofireMethod, parameters: paramater)
+        }
+        
+        let response = await reqeust.validate()
+            .serializingDecodable(T.self,decoder: decoder)
+            .response
+        guard let responseValue = response.value else{
+            return .failure(response.error ?? NetworkError.unknown)
         }
         
         
-        return .success(nil)
+        return .success(responseValue)
     }
     
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030DFD8B2D52262D00021143 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 030DFD8A2D52262D00021143 /* SnapKit */; };
 		034B2C682D0DE47200C00134 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C672D0DE47200C00134 /* Realm */; };
 		034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C6C2D0DE51B00C00134 /* Toast */; };
 		034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C732D0DF0FF00C00134 /* BottomSheet */; };
@@ -19,9 +20,22 @@
 		03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopCastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		030DFDD52D52710300021143 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Application/Info.plist,
+			);
+			target = 03BC243B2D0DBC5400EFAFB6 /* PopCastApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		03BC243E2D0DBC5400EFAFB6 /* PopCastApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				030DFDD52D52710300021143 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */,
+			);
 			path = PopCastApp;
 			sourceTree = "<group>";
 		};
@@ -35,6 +49,7 @@
 				03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */,
 				034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */,
 				03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */,
+				030DFD8B2D52262D00021143 /* SnapKit in Frameworks */,
 				03BC245B2D0DC0F500EFAFB6 /* Swinject in Frameworks */,
 				034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */,
 				034B2C682D0DE47200C00134 /* Realm in Frameworks */,
@@ -87,6 +102,7 @@
 				034B2C672D0DE47200C00134 /* Realm */,
 				034B2C6C2D0DE51B00C00134 /* Toast */,
 				034B2C732D0DF0FF00C00134 /* BottomSheet */,
+				030DFD8A2D52262D00021143 /* SnapKit */,
 			);
 			productName = PopCastApp;
 			productReference = 03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */;
@@ -124,6 +140,7 @@
 				034B2C6B2D0DE51B00C00134 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				030DFD892D52262D00021143 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03BC243D2D0DBC5400EFAFB6 /* Products */;
@@ -162,7 +179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = " export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+			shellScript = "export PATH=\"/opt/homebrew/bin:$PATH\"\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -184,9 +201,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7F6X2DV8Y;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -212,9 +230,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7F6X2DV8Y;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -376,6 +395,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		030DFD892D52262D00021143 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		034B2C662D0DE47200C00134 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -435,6 +462,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		030DFD8A2D52262D00021143 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 030DFD892D52262D00021143 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		034B2C672D0DE47200C00134 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 034B2C662D0DE47200C00134 /* XCRemoteSwiftPackageReference "realm-swift" */;

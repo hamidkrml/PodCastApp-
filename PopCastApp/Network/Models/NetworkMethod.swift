@@ -6,10 +6,21 @@
 //
 
 import Foundation
+import Alamofire
 
 enum NetworkMethod{
-    case get
-    case set
-    case put
+    case GET
+    case POST
+    case PUT
     
+    var aloamofireMethod: HTTPMethod{
+        switch self {
+        case .GET:
+            return .get
+        case .POST:
+            return .post
+        case .PUT:
+            return .put
+        }
+    }
 }

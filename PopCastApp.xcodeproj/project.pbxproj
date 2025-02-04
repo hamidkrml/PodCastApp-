@@ -10,8 +10,6 @@
 		034B2C682D0DE47200C00134 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C672D0DE47200C00134 /* Realm */; };
 		034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C6C2D0DE51B00C00134 /* Toast */; };
 		034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C732D0DF0FF00C00134 /* BottomSheet */; };
-		034B2D062D0E019F00C00134 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2D052D0E019F00C00134 /* SnapKit */; };
-		034B2D082D0E019F00C00134 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2D072D0E019F00C00134 /* SnapKit-Dynamic */; };
 		03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC24552D0DC07700EFAFB6 /* Alamofire */; };
 		03BC245B2D0DC0F500EFAFB6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC245A2D0DC0F500EFAFB6 /* Swinject */; };
 		03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC245F2D0DC1EB00EFAFB6 /* Kingfisher */; };
@@ -21,22 +19,9 @@
 		03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopCastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		034B2CED2D0DF90100C00134 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Application/Info.plist,
-			);
-			target = 03BC243B2D0DBC5400EFAFB6 /* PopCastApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		034B2CE02D0DF90100C00134 /* PopCastApp */ = {
+		03BC243E2D0DBC5400EFAFB6 /* PopCastApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				034B2CED2D0DF90100C00134 /* Exceptions for "PopCastApp" folder in "PopCastApp" target */,
-			);
 			path = PopCastApp;
 			sourceTree = "<group>";
 		};
@@ -50,8 +35,6 @@
 				03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */,
 				034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */,
 				03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */,
-				034B2D082D0E019F00C00134 /* SnapKit-Dynamic in Frameworks */,
-				034B2D062D0E019F00C00134 /* SnapKit in Frameworks */,
 				03BC245B2D0DC0F500EFAFB6 /* Swinject in Frameworks */,
 				034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */,
 				034B2C682D0DE47200C00134 /* Realm in Frameworks */,
@@ -64,7 +47,7 @@
 		03BC24332D0DBC5400EFAFB6 = {
 			isa = PBXGroup;
 			children = (
-				034B2CE02D0DF90100C00134 /* PopCastApp */,
+				03BC243E2D0DBC5400EFAFB6 /* PopCastApp */,
 				03BC243D2D0DBC5400EFAFB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +77,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				034B2CE02D0DF90100C00134 /* PopCastApp */,
+				03BC243E2D0DBC5400EFAFB6 /* PopCastApp */,
 			);
 			name = PopCastApp;
 			packageProductDependencies = (
@@ -104,8 +87,6 @@
 				034B2C672D0DE47200C00134 /* Realm */,
 				034B2C6C2D0DE51B00C00134 /* Toast */,
 				034B2C732D0DF0FF00C00134 /* BottomSheet */,
-				034B2D052D0E019F00C00134 /* SnapKit */,
-				034B2D072D0E019F00C00134 /* SnapKit-Dynamic */,
 			);
 			productName = PopCastApp;
 			productReference = 03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */;
@@ -141,9 +122,8 @@
 				03BC245E2D0DC1EB00EFAFB6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				034B2C662D0DE47200C00134 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				034B2C6B2D0DE51B00C00134 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */,
-				034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				03DADEF82D515DAB008939B5 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03BC243D2D0DBC5400EFAFB6 /* Products */;
@@ -206,7 +186,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
+				INFOPLIST_FILE = PopCastApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -234,7 +214,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PopCastApp/Application/Info.plist;
+				INFOPLIST_FILE = PopCastApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -412,20 +392,20 @@
 				minimumVersion = 5.1.1;
 			};
 		};
+		034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.1;
+			};
+		};
 		034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joomcode/BottomSheet.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.0.5;
-			};
-		};
-		034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
 			};
 		};
 		03BC24542D0DC07700EFAFB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -452,14 +432,6 @@
 				minimumVersion = 8.1.2;
 			};
 		};
-		03DADEF82D515DAB008939B5 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.58.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -477,16 +449,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */;
 			productName = BottomSheet;
-		};
-		034B2D052D0E019F00C00134 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		034B2D072D0E019F00C00134 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		03BC24552D0DC07700EFAFB6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

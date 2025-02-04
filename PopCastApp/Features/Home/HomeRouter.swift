@@ -10,9 +10,7 @@ import Foundation
 import UIKit
 
 final class  HomeRouter: PresenterToRouterHomeProtocol {
-    func navigateToDetail() {
-      //  navigation.present(<#T##viewController: UIViewController##UIViewController#>)
-    }
+    
     
     // MARK: Static methods
 
@@ -34,5 +32,9 @@ final class  HomeRouter: PresenterToRouterHomeProtocol {
 
     init(navigation: NavigationView) {
         self.navigation = navigation
+    }
+    
+    func navigateToDetail() {
+      //  navigation.present(<#T##viewController: UIViewController##UIViewController#>)
     }
 }

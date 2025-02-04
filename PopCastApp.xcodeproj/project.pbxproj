@@ -141,9 +141,9 @@
 				03BC245E2D0DC1EB00EFAFB6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				034B2C662D0DE47200C00134 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				034B2C6B2D0DE51B00C00134 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				034B2D042D0E019F00C00134 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				03DADEF82D515DAB008939B5 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03BC243D2D0DBC5400EFAFB6 /* Products */;
@@ -412,14 +412,6 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		034B2C6F2D0DEEA200C00134 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/SwiftLint.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.57.1;
-			};
-		};
 		034B2C722D0DF0FF00C00134 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joomcode/BottomSheet.git";
@@ -458,6 +450,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 8.1.2;
+			};
+		};
+		03DADEF82D515DAB008939B5 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

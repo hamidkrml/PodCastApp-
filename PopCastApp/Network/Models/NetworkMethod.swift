@@ -13,7 +13,7 @@ enum NetworkMethod{
     case POST
     case PUT
     
-    var aloamofireMethod: HTTPMethod{
+    var alamofireMethod: HTTPMethod{
         switch self {
         case .GET:
             return .get

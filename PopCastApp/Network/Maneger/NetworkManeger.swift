@@ -21,6 +21,9 @@ final class NetworkManeger{
 
     func send<T: Decodable>(
         path: NetworkPathProtocol,
+        
+        
+        
         // TODD: NetworkMethod global
         method: NetworkMethod,
         type: T.Type,
@@ -33,9 +36,9 @@ final class NetworkManeger{
         let reqeust: DataRequest
         
         if let body = body{
-            reqeust = AF.request(url, method: method.aloamofireMethod, parameters: body, encoder: JSONParameterEncoder.default)
+            reqeust = AF.request(url, method: method.alamofireMethod, parameters: body, encoder: JSONParameterEncoder.default)
         }else{
-            reqeust = AF.request(url, method: method.aloamofireMethod, parameters: paramater)
+            reqeust = AF.request(url, method: method.alamofireMethod, parameters: paramater)
         }
         
         let response = await reqeust.validate()

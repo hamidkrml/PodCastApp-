@@ -16,7 +16,18 @@
 		03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 03BC245F2D0DC1EB00EFAFB6 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		030DFEF62D52BBB200021143 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03BC24342D0DBC5400EFAFB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03BC243B2D0DBC5400EFAFB6;
+			remoteInfo = PopCastApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		030DFEF22D52BBB100021143 /* PopCastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopCastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopCastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -31,6 +42,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		030DFEF32D52BBB200021143 /* PopCastAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PopCastAppTests;
+			sourceTree = "<group>";
+		};
 		03BC243E2D0DBC5400EFAFB6 /* PopCastApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -42,6 +58,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		030DFEEF2D52BBB100021143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03BC24392D0DBC5400EFAFB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				03BC243E2D0DBC5400EFAFB6 /* PopCastApp */,
+				030DFEF32D52BBB200021143 /* PopCastAppTests */,
 				03BC243D2D0DBC5400EFAFB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */,
+				030DFEF22D52BBB100021143 /* PopCastAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +103,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		030DFEF12D52BBB100021143 /* PopCastAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030DFEF82D52BBB200021143 /* Build configuration list for PBXNativeTarget "PopCastAppTests" */;
+			buildPhases = (
+				030DFEEE2D52BBB100021143 /* Sources */,
+				030DFEEF2D52BBB100021143 /* Frameworks */,
+				030DFEF02D52BBB100021143 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030DFEF72D52BBB200021143 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				030DFEF32D52BBB200021143 /* PopCastAppTests */,
+			);
+			name = PopCastAppTests;
+			packageProductDependencies = (
+			);
+			productName = PopCastAppTests;
+			productReference = 030DFEF22D52BBB100021143 /* PopCastAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		03BC243B2D0DBC5400EFAFB6 /* PopCastApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03BC244F2D0DBC5600EFAFB6 /* Build configuration list for PBXNativeTarget "PopCastApp" */;
@@ -115,9 +163,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					030DFEF12D52BBB100021143 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 03BC243B2D0DBC5400EFAFB6;
+					};
 					03BC243B2D0DBC5400EFAFB6 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -148,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				03BC243B2D0DBC5400EFAFB6 /* PopCastApp */,
+				030DFEF12D52BBB100021143 /* PopCastAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		030DFEF02D52BBB100021143 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03BC243A2D0DBC5400EFAFB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +244,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		030DFEEE2D52BBB100021143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03BC24382D0DBC5400EFAFB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +260,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		030DFEF72D52BBB200021143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03BC243B2D0DBC5400EFAFB6 /* PopCastApp */;
+			targetProxy = 030DFEF62D52BBB200021143 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		030DFEF92D52BBB200021143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7F6X2DV8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HamidKarimli.PopCastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopCastApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PopCastApp";
+			};
+			name = Debug;
+		};
+		030DFEFA2D52BBB200021143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7F6X2DV8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HamidKarimli.PopCastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PopCastApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PopCastApp";
+			};
+			name = Release;
+		};
 		03BC24502D0DBC5600EFAFB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -374,6 +487,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		030DFEF82D52BBB200021143 /* Build configuration list for PBXNativeTarget "PopCastAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030DFEF92D52BBB200021143 /* Debug */,
+				030DFEFA2D52BBB200021143 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03BC24372D0DBC5400EFAFB6 /* Build configuration list for PBXProject "PopCastApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

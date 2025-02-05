@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3C3AC8A4-F0AA-4DFF-94AB-A19255848DCF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11278608-1CF4-4EE2-BFCE-95B5CAA8C759"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopCastAppTests/NetworkManeasdasd.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "testWithMusicResponse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "11278608-1CF4-4EE2-BFCE-95B5CAA8C759 - b46728094c385220"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for PopCastAppTests.PopCastAppTests1.testWithMusicResponse() async -&gt; ()"
+                  moduleName = "PopCastAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/PopCastApp/PopCastAppTests/NetworkManeasdasd.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24">
+               </Location>
+               <Location
+                  uuid = "11278608-1CF4-4EE2-BFCE-95B5CAA8C759 - b46728094c385220"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for PopCastAppTests.PopCastAppTests1.testWithMusicResponse() async -&gt; ()"
+                  moduleName = "PopCastAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/PopCastApp/PopCastAppTests/NetworkManeasdasd.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3C65175-24CC-4727-B4C0-61729A38F171"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PopCastAppTests/NetworkManeasdasd.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "testWithMusicResponse()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

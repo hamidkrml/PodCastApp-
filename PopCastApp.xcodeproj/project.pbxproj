@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		030DFD8B2D52262D00021143 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 030DFD8A2D52262D00021143 /* SnapKit */; };
+		0310A8352D55164B00DACD75 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0310A8342D55164B00DACD75 /* RealmSwift */; };
 		034B2C682D0DE47200C00134 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C672D0DE47200C00134 /* Realm */; };
 		034B2C6D2D0DE51B00C00134 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C6C2D0DE51B00C00134 /* Toast */; };
 		034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 034B2C732D0DF0FF00C00134 /* BottomSheet */; };
@@ -25,6 +26,19 @@
 			remoteInfo = PopCastApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0310A8322D55154A00DACD75 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		030DFEF22D52BBB100021143 /* PopCastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopCastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0310A8352D55164B00DACD75 /* RealmSwift in Frameworks */,
 				03BC24602D0DC1EB00EFAFB6 /* Kingfisher in Frameworks */,
 				034B2C742D0DF0FF00C00134 /* BottomSheet in Frameworks */,
 				03BC24562D0DC07700EFAFB6 /* Alamofire in Frameworks */,
@@ -134,6 +149,7 @@
 				03BC24392D0DBC5400EFAFB6 /* Frameworks */,
 				03BC243A2D0DBC5400EFAFB6 /* Resources */,
 				034B2C6E2D0DE5E200C00134 /* Swiftlint */,
+				0310A8322D55154A00DACD75 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +167,7 @@
 				034B2C6C2D0DE51B00C00134 /* Toast */,
 				034B2C732D0DF0FF00C00134 /* BottomSheet */,
 				030DFD8A2D52262D00021143 /* SnapKit */,
+				0310A8342D55164B00DACD75 /* RealmSwift */,
 			);
 			productName = PopCastApp;
 			productReference = 03BC243C2D0DBC5400EFAFB6 /* PopCastApp.app */;
@@ -588,6 +605,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 030DFD892D52262D00021143 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		0310A8342D55164B00DACD75 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 034B2C662D0DE47200C00134 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 		034B2C672D0DE47200C00134 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;

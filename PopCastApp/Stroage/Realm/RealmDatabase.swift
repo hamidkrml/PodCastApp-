@@ -38,7 +38,7 @@ final class RealmDatabase : LocalDatabaseProtocol {
         }
     }
     
-    func items<T>() -> [T] where T : Object {
+    func items<T:Object>() -> [T] {
         return realm.objects(T.self).map{$0}
     }
     
